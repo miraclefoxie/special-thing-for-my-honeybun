@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Я тебя люблю</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    h1 {
+      font-size: 64px;
+      color: #e91e63;
+      text-shadow: 2px 2px #ffc1e3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Я тебя люблю ❤️</h1>
+</body>
+</html>
