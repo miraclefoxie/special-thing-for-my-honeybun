@@ -1,27 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Сюрприз 💖</title>
-    <style>
-        body {
-            background-color: #fff0f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        h1 {
-            font-size: 4em;
-            color: #e91e63;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Special thing for my honeybun</title>
+  <style>
+    /* Экран с кнопкой по центру */
+    #start-screen {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+    }
+    #start-screen button {
+      font-size: 24px;
+      padding: 20px 50px;
+      cursor: pointer;
+      border: none;
+      background-color: #ff69b4;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    #start-screen button:hover {
+      background-color: #ff85c1;
+    }
+
+    /* Скрываем основной контент до клика */
+    #main-content {
+      display: none;
+    }
+
+    /* Твой существующий стиль, если есть */
+    /* Добавляй сюда свои стили из оригинала */
+  </style>
 </head>
 <body>
-    <h1>Я ТЕБЯ ЛЮБЛЮ 💘</h1>
+
+  <!-- Экран с кнопкой -->
+  <div id="start-screen">
+    <button id="start-btn">нажми на меня</button>
+  </div>
+
+  <!-- Основной контент твоего сайта -->
+  <div id="main-content">
+    <!-- Вставь сюда весь оригинальный HTML-код твоего сайта -->
+    <!-- Ниже пример, замени на твой код -->
+
+    <h1>Привет, мой медовый зайчик!</h1>
+    <p>Добро пожаловать на сайт, который я сделала специально для тебя.</p>
+
+    <!-- Твой оригинальный контент... -->
+  </div>
+
+  <script>
+    const startBtn = document.getElementById('start-btn');
+    const startScreen = document.getElementById('start-screen');
+    const mainContent = document.getElementById('main-content');
+
+    startBtn.addEventListener('click', () => {
+      startScreen.style.display = 'none';
+      mainContent.style.display = 'block';
+    });
+  </script>
+
 </body>
 </html>
